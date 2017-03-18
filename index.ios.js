@@ -16,18 +16,15 @@ import { Button, Card } from 'react-native-material-design';
 export default class teambeacon extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Button value="NORMAL FLAT" onPress={()=> console.log("I pressed a flat button")} />
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+      <View>
+          <Card>
+            <Card.Body>
+              <Text>You have found Beacon 1</Text>
+            </Card.Body>
+            <Card.Actions position="right">
+              <Button value="Acknowledge" />
+            </Card.Actions>
+        </Card>
       </View>
     );
   }
