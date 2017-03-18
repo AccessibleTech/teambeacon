@@ -11,11 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+import { Button, Card } from 'react-native-material-design';
 
 export default class teambeacon extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Button value="NORMAL FLAT" onPress={()=> console.log("I pressed a flat button")} />
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
